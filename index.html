@@ -81,7 +81,9 @@
     color:rgba(0, 0, 0, 0.728);
    
 }
-    
+.rev-wrap{
+        flex-wrap: wrap-reverse !important;
+      } 
     nav ul{
         display: flex;
         align-items: center;
@@ -112,12 +114,6 @@
         width: 40vw;
         border-radius: 1vw;
     }
-      hr {
-            border: none; /* Remove the default border */
-            height: 2px; /* Set the height of the horizontal line */
-            background-color: #F2B646; /* Set the desired color */
-            margin: 20px 0; /* Optional: Add some margin for spacing */
-        }
     
     .image-div{
         font-size: 7vh;
@@ -149,8 +145,146 @@
         font-size:7vh;
         margin-left: 2vw;
     }
-    
-</style>
+    @media(max-width:1100px){
+     main img{
+      width: 50vw;
+     height: auto; 
+     }
+     .text{
+      padding-top:5vh !important;
+     }
+     .text h1{
+      font-size:5vh;
+      max-width:35vw;
+     }
+    }
+
+    @media(max-width:950px){
+      .text{
+        padding-top:1vh !important;
+      }
+      main{
+        display: flex;
+        align-items: left !important;
+      }
+      main img{
+        height: 80vh;
+      }
+      .text button{
+        width: 30vw;
+      }
+      nav li{
+        width: 10vw;
+        height:5vh;
+      }
+      .about-section{
+        display: block;
+      }
+      .about-section img{
+        display: none;
+      }
+      .about-text h1{
+        font-size:2vw;
+        height:5vh;
+
+      }
+      .about-text p{
+        max-width: 100vw;
+      }
+      .about-text{
+        width:70vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+      }
+      .about-section{
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+      }
+    }
+  
+    @media(max-width:800px){
+      main img{
+        display: none;
+        height: 0;
+        width: 0;
+      }
+      main{
+        display: flex;
+        align-items: center;
+        padding:0;
+        margin:0;
+        width: 100vw;
+      }
+      main img{
+        margin:0;
+        padding:0;
+      }
+      .text{
+        margin-left: 2vw;
+      }
+      .text button{
+        width: 60vw;
+      }
+
+      .text h1, .text p{
+        width:80vw;
+        max-width: 100vw !important;
+      }
+      nav ul{
+        display: none;
+      }
+      .head{
+        font-size: 4vh;
+      }
+
+      .service-card{
+        display: flex;
+        flex-wrap: wrap-reverse !important;
+      }
+      .service-card p{
+        width: 90vw;
+        max-width: 100vw !important;
+      }
+      .service-card button{
+        width: 50vw !important;
+      }
+      .service-card img{
+        width: 50vw !important;
+      }
+      
+    }
+    @media(max-width:400px){
+      .about-text h1{
+        font-size:3.4vh;
+        width: 80vw;
+      }
+      .service-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .service-card img{
+        margin:2vw;
+        width: 80vw !important;
+        height: 35vh !important;
+       
+      }
+    }
+    @media(max-width:1000px){
+      form{
+        width: 100vw;
+      }
+      form input, form textarea,form button{
+        width: 96vw !important;
+      }
+      
+    }
+
+    </style>
 <body>
     <nav id="navbar">
         <h1>Pride Electricals</h1>
@@ -169,7 +303,7 @@
         </div>
         <img src="main.jpeg" alt="">
     </main>
-    <hr/>
+    <hr>
     <h1 class="head">About <span class="theme">Company</span></h1>
     <section class="about-section">
         <div class="image-div">
@@ -195,7 +329,6 @@
             </div>
         </div>
     </section>
-     <hr/>
 <style>
     .service-card{
         display: flex;
@@ -248,7 +381,7 @@
             </div>
         </div>
 
-        <div class="service-card" style="background-color: #F2B646;color: white;width: 98vw;">
+        <div class="service-card rev-wrap" style="background-color: #F2B646;color: white;width: 98vw;">
             
             <div class="service-description" >
                 
@@ -270,7 +403,7 @@
             </div>
         </div>
 
-        <div class="service-card" style="background-color: #F2B646;color: white;width: 98vw;">
+        <div class="service-card rev-wrap" style="background-color: #F2B646;color: white;width: 98vw;">
             
             <div class="service-description">
                 
